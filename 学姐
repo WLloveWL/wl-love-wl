@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>学姐，你好</title>
+  <style>
+    body {
+      background-color: pink;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    p {
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 16px 32px;
+      font-size: 24px;
+      background-color: white;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 2px 2px 4px #000000;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #f2f2f2;
+    }
+    #dislike {
+      display: block;
+      margin: 50px auto 0;
+      padding: 16px 32px;
+      font-size: 24px;
+      background-color: white;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 2px 2px 4px #000000;
+      cursor: pointer;
+    }
+    #dislike:hover {
+      display: none;
+    }
+    #heart {
+      display: none;
+      margin: 0 auto 50px;
+      padding: 16px 32px;
+      font-size: 24px;
+      background-color: rgb(239, 13, 13);
+      border: none;
+      border-radius: 8px;
+      box-shadow: 2px 2px 4px #000000;
+      cursor: pointer;
+    }
+    #heart:hover {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>学姐，你喜欢我吗？</h1>
+  <p>请选择：</p>
+  <button onclick="alert('我也喜欢你')">喜欢</button>
+  <button id="dislike" onclick="alert('对不起，你不能选择这个按钮');document.getElementById('dislike').style.display='none';document.getElementById('heart').style.display='block'">不喜欢</button>
+  <button id="heart" onclick="alert('我也喜欢你')">喜欢</button>
+  <div style="position: fixed; bottom: 10; right: 20; padding: 8px; background-color: rgba(0, 0, 0, 0.5); color: white; font-size: 16px;">20生物科学 王麟</div>
